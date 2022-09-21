@@ -6,28 +6,34 @@
  * Made By MaterializeCSS.com
  */
 
-nav ul a,
-nav .brand-logo {
-  color: #444;
+/* sliders*/
+.cat-cards {
+  display: flex;
+}
+#sliders{
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+.card img{
+  height: 180px;
+}
+.category{
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: #fff;
+}
+h5{
+  margin: 0 0;
 }
 
-p {
-  line-height: 2rem;
+nav ul a {
+  color: rgb(255, 255, 255);
 }
-
-.sidenav-trigger {
-  color: #26a69a;
+body{
+  background-color: #f2f2f2;
 }
-
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -54,4 +60,22 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.container {
+  /*margin-top: 20px;*/ 
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
