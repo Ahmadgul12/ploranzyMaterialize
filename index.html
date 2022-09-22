@@ -36,9 +36,32 @@
             </ul>
             <div class="modal" id="person">
                 <div class="modal-content indigo">
+                    <div class="progress">
+                        <div class="indeterminate"></div>
+                    </div>
                     <h4>Login or register</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolores eligendi accusantium sapiente enim dolore voluptates vero minus, autem facilis optio magnam. Et voluptatibus magnam sequi maxime vitae voluptas cumque.</p>
-                    
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="icon_prefix" type="text" class="validate">
+                                    <label for="icon_prefix">First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                    <button class="btn waves-effect waves-light indigo" type="submit"
+                                        name="action">Submit
+                                        <i class="material-icons right">send</i>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
                     <div class="modal-footer indigo">
                         <a href="" class="modal-close btn indigo">close</a>
                     </div>
@@ -47,9 +70,14 @@
         </div>
     </nav>
     <ul class="sidenav" id="mobile-links">
+        <li><a href="#person" class="btn darken-4 modal-trigger">
+                Login
+            </a>
+        </li>
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
+
     </ul>
 
     <div class="cat-cards">
@@ -238,7 +266,7 @@
     <script src="js/script.js"></script>
 
     <script>
-       
+
     </script>
 
 
