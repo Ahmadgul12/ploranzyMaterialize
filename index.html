@@ -16,60 +16,58 @@
 </head>
 
 <body>
+    <div class="navbar-fixed">
+        <nav class="nav-wraper indigo">
+            <a href="#" class="brand-logo" id="logo">Ploranzi</a>
+            <div class="container">
 
-    <nav class="nav-wraper indigo">
-        <div class="container">
-            <a href="#" class="brand-logo lift">Ploranzi</a>
-            <a href="#" class="sidenav-trigger" data-target="mobile-links">
-                <i class="material-icons">menu</i>
-            </a>
-            <ul class="hide-on-med-and-down right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#" class="btn-floating indigo darken-4 "><i class="material-icons">notifications</i></a>
-                </li>
-                <li><a href="#person" class="btn-floating indigo darken-4 modal-trigger">
-                        <i class="material-icons">person</i>
-                    </a>
-                </li>
-            </ul>
-            <div class="modal" id="person">
-                <div class="modal-content indigo">
-                    <div class="progress">
-                        <div class="indeterminate"></div>
-                    </div>
-                    <h4>Login or register</h4>
-                    <div class="row">
-                        <form class="col s12">
-                            <div class="row">
-                                <div class="input-field col s6">
-                                    <i class="material-icons prefix">account_circle</i>
-                                    <input id="icon_prefix" type="text" class="validate">
-                                    <label for="icon_prefix">First Name</label>
-                                </div>
-                                <div class="input-field col s6">
-                                    <i class="material-icons prefix">email</i>
-                                    <input id="email" type="email" class="validate">
-                                    <label for="email">Email</label>
-                                    <button class="btn waves-effect waves-light indigo" type="submit"
-                                        name="action">Submit
-                                        <i class="material-icons right">send</i>
-                                    </button>
-                                </div>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <!-- Dropdown Trigger -->
+                <a class='dropdown-trigger btn indigo lighten-2' href='#' data-target='dropdown1'>whole place</a>
 
+                <!-- Dropdown Structure -->
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="#!">+ 5km</a></li>
+                    <li><a href="#!">+ 10km</a></li>
+                    <li><a href="#!">+ 20km</a></li>
+                    <li><a href="#!">+ 50km</a></li>
+                </ul>
+                <ul class="hide-on-med-and-down right">
+                    <li>
+                        <div class="center row">
+                            <div class="col s12 ">
+
+                                <div class="row" id="topbarsearch">
+                                    <div class="input-field col s6 s12">
+
+                                        <i class="material-icons prefix">search</i>
+                                        <input type="text" placeholder="Search" id="autocomplete-input"
+                                            class="autocomplete">
+                                    </div>
+                                </div>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </li>
 
-                    <div class="modal-footer indigo">
-                        <a href="" class="modal-close btn indigo">close</a>
-                    </div>
-                </div>
+                    <li><a href="#" class="btn waves-effect waves-light indigo lighten-2">Sign Up</a></li>
+                    <li><a href="#" class="btn waves-effect waves-light indigo lighten-2">Login</a></li>
+                    <li>
+                    <li><a href="#person" class="btn-floating indigo darken-4 ">
+                            <i class="material-icons">person</i>
+                        </a>
+                    </li>
+
+                </ul>
+
+
             </div>
-        </div>
-    </nav>
+
+        </nav>
+    </div>
     <ul class="sidenav" id="mobile-links">
+
         <li><a href="#person" class="btn darken-4 modal-trigger">
                 Login
             </a>
@@ -264,11 +262,6 @@
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
     <script src="js/script.js"></script>
-
-    <script>
-
-    </script>
-
 
     <footer class="page-footer indigo">
         <div class="container">
